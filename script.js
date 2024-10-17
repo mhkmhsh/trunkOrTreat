@@ -18,3 +18,11 @@ $(document).ready(function() {
       $(this).next('.event-details').slideToggle();
   });
 });
+
+$(document).ready(function() {
+  $('.trunk-image').on('mouseenter', function() {
+    $(this).find('.description').fadeIn();
+  }).on('mouseleave', function() {
+    $(this).find('.description').fadeOut();
+  });
+});

@@ -1,7 +1,6 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
-  background: #f1dac4; 
-  
+  background: #f1dac4;
 }
 
 .navbar {
@@ -11,7 +10,7 @@ body{
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Aligns logo and buttons to edges */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -22,29 +21,30 @@ header .logo {
 }
 
 a {
-  display: inline-block; 
-  font-size: 1em; 
-  background: #f1dac4; 
-  padding: 10px 30px; 
-  text-transform: uppercase; 
-  text-decoration: none; 
-  font-weight: 500; 
-  margin-top: 10px; 
-  color: #0d0c1d; 
-  letter-spacing: 2px; 
-  transition: 0.2s; 
+  display: inline-block;
+  font-size: 1em;
+  background: #f1dac4;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #0d0c1d;
+  letter-spacing: 2px;
+  transition: background-color 0.2s, color 0.2s;
 }
+
 .social li a {
-  display: inline-block; 
-  margin-right: 20px; 
-  filter: invert(1); 
-  transform: scale(0.5); 
-  transition: 0.5s; 
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: transform 0.5s;
 }
 
 .divs {
   background-color: #0d0c1d;
-  color: #f1dac4; 
+  color: #f1dac4;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 50px rgba(13, 12, 29, 0.5);
@@ -59,10 +59,23 @@ a {
   text-decoration: none;
   border: 1px solid #f1dac4;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button-container a:hover {
   background-color: #0d0c1d;
   color: #f1dac4;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 50px #f1dac45f;
+  transition: transform 0.3s;
+}
+
+.trunk-image:hover img {
+  transform: scale(1.05);
 }
